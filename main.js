@@ -26,14 +26,14 @@ function drawArray() {
 document.addEventListener("keydown", keydownHandler)
 
 function keydownHandler(event) {
-    // if (event.keyCode === 38) {
+    if (event.keyCode === 38) {
         // Up arrow - add 600 to the index
-    //     let middleIndex = Math.floor(myData.length / 2);
-    //     myData.splice(middleIndex, 0, Math.random() * 600);
-    // } else if (event.keyCode === 40) {
-    //     let middleIndex = Math.floor(myData.length / 2);
-    //     myData.splice(middleIndex, 1);
-    // }
+        let middleIndex = Math.floor(myData.length / 2);
+        myData.splice(middleIndex, 0, Math.random() * 600);
+    } else if (event.keyCode === 40) {
+        let middleIndex = Math.floor(myData.length / 2);
+        myData.splice(middleIndex, 1);
+    }
 
     // if (event.keyCode === 38) {
     //     // Up arrow - Push value to the end of the array
